@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/title_editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/title_editText_text"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
+        app:layout_constraintBottom_toTopOf="@+id/releaseDate_editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/title_textView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/releaseDate_editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/releaseDate_editText_text"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
+        app:layout_constraintBottom_toTopOf="@+id/duration_editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/releaseDate_textView"
+        app:layout_constraintTop_toBottomOf="@+id/title_editText"
+        android:autofillHints=""
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <TextView
+        android:id="@+id/title_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:height="48dp"
+        android:gravity="center_vertical"
+        android:text="@string/title_textView_text"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/releaseDate_textView"
+        app:layout_constraintEnd_toStartOf="@+id/title_editText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/releaseDate_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:height="48dp"
+        android:gravity="center_vertical"
+        android:text="@string/release_date_textView_text"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/duration_editText"
+        app:layout_constraintEnd_toStartOf="@+id/releaseDate_editText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_textView" />
+
+    <TextView
+        android:id="@+id/duration_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:height="48dp"
+        android:gravity="center_vertical"
+        android:text="@string/duration_text"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/poster_textView"
+        app:layout_constraintEnd_toStartOf="@+id/duration_editText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/releaseDate_textView" />
+
+    <EditText
+        android:id="@+id/duration_editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/duration_editText_text"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
+        app:layout_constraintBottom_toTopOf="@+id/poster_editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/duration_textView"
+        app:layout_constraintTop_toBottomOf="@+id/releaseDate_editText"
+        android:autofillHints=""
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <TextView
+        android:id="@+id/poster_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:height="48dp"
+        android:gravity="center_vertical"
+        android:text="@string/poster_textView_text"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/rating_textView"
+        app:layout_constraintEnd_toStartOf="@+id/poster_editText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/duration_textView" />
+
+    <EditText
+        android:id="@+id/poster_editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/poster_text"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
+        app:layout_constraintBottom_toTopOf="@+id/rating_editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/poster_textView"
+        app:layout_constraintTop_toBottomOf="@+id/duration_editText"
+        android:autofillHints=""
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <TextView
+        android:id="@+id/rating_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:height="48dp"
+        android:gravity="center_vertical"
+        android:text="@string/rating_textView_text"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/summary_textView"
+        app:layout_constraintEnd_toStartOf="@+id/rating_editText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/poster_textView" />
+
+    <EditText
+        android:id="@+id/rating_editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/rating_editText_text"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
+        app:layout_constraintBottom_toTopOf="@+id/summary_editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rating_textView"
+        app:layout_constraintTop_toBottomOf="@+id/poster_editText"
+        android:autofillHints=""
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <TextView
+        android:id="@+id/summary_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:height="48dp"
+        android:gravity="center_vertical"
+        android:text="@string/summary_textView_text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/summary_editText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rating_textView" />
+
+    <EditText
+        android:id="@+id/summary_editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/summary_editText_text"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/summary_textView"
+        app:layout_constraintTop_toBottomOf="@+id/rating_editText"
+        android:autofillHints=""
+        tools:ignore="VisualLintTextFieldSize" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
